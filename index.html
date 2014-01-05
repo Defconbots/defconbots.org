@@ -2,83 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Defconbots 2014</title>
-
+    <title>DEFCONBOTS</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/site.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>  
+    <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Defconbots 2014</a>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+    <!-- Menu -->
+    <nav class="menu" id="theMenu">
+        <div class="menu-wrap">
+            <h1 class="logo"><a href="index.html#HOME">MENU</a></h1>
+            <a href="#INFO" class="smoothScroll">INFO</a>
+            <a href="#RULES" class="smoothScroll">RULES</a>
+            <a href="#VENUE" class="smoothScroll">VENUE</a>
+            <a href="#CONTACT" class="smoothScroll">CONTACT</a>
+            <a href="#"><i class="icon-github"></i></a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#event">The Event</a></li>
-            <li><a href="#aboutus">About us</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        
+        <!-- Menu button -->
+        <div id="menuToggle"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <!-- ========== HEADER SECTION ========== -->
+    <section id="HOME" name="HOME">
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <h1>DEFCONBOTS 2014</h1>
+                <br>
+                <h3>An Autonomous Robotics Competition At <a href="http://defcon.org/">DEFCON</a></h3>
+                <br>
+                <h3>After a 5-year hiatus DEFCONBOTS is back!</h3>
+                <br>
+                <h3>August 7-10, 2014</h3>
+                <br>
+                <br>
+            </div>
+        </div>
     </div>
+    </section>
 
-    <div class="container">
+    <!-- ========== INFO SECTION ========== -->
+    <section id="INFO" name="INFO">
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <h3>PAST EVENTS</h3>
+                <ul>
+                    <li><h4><a href="http://jotux.com/defconbots/defcon12.7z">2004/DEFCON 12</a></h4>Build a mobile robot that can pick up ping pong balls and transport them across an arena.</li>
+                    <li><h4><a href="http://jotux.com/defconbots/defcon13.7z">2005/DEFCON 13</a></h4>Build a mobile robot that can traverse an arena picking up ping pong balls, then shoot down cans with them.</li>
+                    <li><h4><a href="http://jotux.com/defconbots/defcon14.7z">2006/DEFCON 14</a></h4>Build a shooting gallery robot, timed tournament</li>
+                    <li><h4><a href="http://jotux.com/defconbots/defcon15.7z">2007/DEFCON 15</a></h4>Build a shooting gallery robot, elimination tournament</li>
+                    <li><h4><a href="http://jotux.com/defconbots/defcon16.7z">2008/DEFCON 16</a></h4>Build a shooting gallery robot, elimination tournament</li>
+                </ul>
+                <h3>COMPETITION</h3>
+                <p class="centered"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></p>
+                <div class="row mt centered">
+                    <div class="col-lg-4">
+                        <i class="fa fa-book fa-4x"></i>
+                        <h4>HISTORY</h4>
+                        <p>DEFCONBOTS started in 2004 at DEFCON 12. The goal of the competition has always been to design, build, and program an autonomous robot to complete a specific task.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fa fa-wrench fa-4x"></i>
+                        <h4>GET STARTED</h4>
+                        <p>Excited to compete but don't know where to start? More interested in software than building the robot? Use our free <a href ="https://github.com/Defconbots/2014_Reference_Robot">Reference Design</a> as a starting point.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fa fa-keyboard-o fa-4x"></i>
+                        <h4>COMPETE</h4>
+                        <ul>
+                            <li>Build a <a href ="https://github.com/Defconbots/2014_Reference_Robot#hardware">robot</a></li>
+                            <li>Write some code</li>
+                            <li>Show up at the event</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-      <div class="jumbotron">
-        <h1>Defconbots 2014 - Tower Defense</h1>
-        <p>Defconbots is back for Defcon 22. After a haitus, we're re-opening under new
-        organizers with a new event at the 2014 convention. The concept of the event is
-        to recreate tower defense games with robots that shoot lasers.</p>
-      </div>
-      
-      <div class="container" id="event">
-        <h2>The event</h2>
-        <p>Your goal is to build an autonomous robot with an aiming mechanism and a laser, and
-        be able to shoot the laser at targets moving along a track. Hitting the targets will
-        disable the targets, and when all of the targets are disabled, the wave will end.</p>
-        <p>Your score will be the number of waves you are able to successfully disable all
-        of the targets. Each wave will get progressively faster, and if necessary, targets will
-        require multiple hits to disable. Final details are forthcoming.</p>
-        <p>For the full rules, see: <a href="https://github.com/Defconbots/2014_Competition_Rules">https://github.com/Defconbots/2014_Competition_Rules</a></p>
-      </div>
-      
-      <div class="container" id="aboutus">
-        <h2>About us</h2>
-        <p><a href="http://www.jotux.com/">Jotux</a> and <a href="http://www.burntpopcorn.net/">Fryguy</a>
-        originally competed at Defconbots 15 (shooting gallery) before the event ended. We continued
-        to run a similar event at <a href="http://www.robogames.net/">Robogames</a> for the past
-        several years. With Robogames ending, we decided to create a new event and bring it back
-        to the original place: Defcon.</p>
-      </div>
+    <!-- ========== RULES SECTION ========== --> 
+    <section id="RULES" name="RULES">
+    <div id="f">
+        <div class="container">
+            <div class="row centered">
+                <h3>RULES</h3>
+                    <p>These are the official WORK-IN-PROGRESS rules for the DEFCONBOTS 2014 contest -- tower defense. These rules are in development and subject to change but will be finalized by May-2014. If you have comments, questions or suggestions create an issue on the <a href="https://github.com/Defconbots/2014_Competition_Rules/issues">2014-rules repository.</a></p>
+                <script src="https://gist.github.com/jotux/8261048.js"></script>
+            </div>
+        </div>
+    </div>
+    </section>
 
-    </div><!-- /.container -->
-
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" name="contact">
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <h3>CONTACT</h3>
+                <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+                
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p>Comments, questions or suggestions create an issue on the <a href="https://github.com/Defconbots/2014_Competition_Rules/issues">2014-rules repository.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ========== VENUE SECTION ========== -->
+    <section id="VENUE" name="VENUE">
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <h3>VENUE</h3>
+                <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+                
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p><a href="http://defcon.org/">DEFCON</a> 22</p>
+                    <p>August 7-10, 2014</p>
+                    <p>Rio Hotel</p>
+                    <p>3700 W Flamingo Rd, Las Vegas, NV 89103</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
