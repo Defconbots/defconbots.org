@@ -307,6 +307,8 @@ a:after {
             transition: all .1s ease-in-out;
 }
 
+.sponsor-logo { margin-top: 20px; }
+
 #RULES .markdown-body {
     background-color: #1a1a1a;
 }   
